@@ -1,0 +1,6 @@
+.vs
+Debug
+opengl_1_glfw/Debug
+*.VC.db
+*.VC.opendb
+*.vcxproj.filters
