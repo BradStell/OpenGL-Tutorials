@@ -72,7 +72,7 @@ Shader::Shader(const GLchar* vertexPath, const GLchar* fragmentPath)
 	};
 
 	//  Fragment Shader
-	fragment = glCreateShader(GL_VERTEX_SHADER);
+	fragment = glCreateShader(GL_FRAGMENT_SHADER);
 	glShaderSource(fragment, 1, &fShaderCode, NULL);
 	glCompileShader(fragment);
 	// Print compile errors if any

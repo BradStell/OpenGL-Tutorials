@@ -83,7 +83,7 @@
       <SDLCheck>true</SDLCheck>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glfw3.lib;glew32s.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SOIL.lib;glfw3.lib;glew32sd.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -128,6 +128,8 @@
     <ClCompile Include="Shaders_Uniforms.cpp" />
     <ClCompile Include="Shader_VertexColors.cpp" />
     <ClCompile Include="square.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Transforms.cpp" />
     <ClCompile Include="TwoTriangles.cpp" />
     <ClCompile Include="TwoTriangles_2VBO_VAO.cpp" />
   </ItemGroup>
@@ -137,6 +139,13 @@
   <ItemGroup>
     <None Include="default.frag" />
     <None Include="default.vs" />
+    <None Include="texture.frag" />
+    <None Include="texture.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="awesomeface.png" />
+    <Image Include="container.jpg" />
+    <Image Include="wall.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
