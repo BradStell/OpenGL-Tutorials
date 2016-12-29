@@ -130,6 +130,7 @@
     <ClCompile Include="square.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Transforms.cpp" />
+    <ClCompile Include="Transform_Container.cpp" />
     <ClCompile Include="TwoTriangles.cpp" />
     <ClCompile Include="TwoTriangles_2VBO_VAO.cpp" />
   </ItemGroup>
@@ -139,6 +140,8 @@
   <ItemGroup>
     <None Include="default.frag" />
     <None Include="default.vs" />
+    <None Include="rotation.frag" />
+    <None Include="rotation.vs" />
     <None Include="texture.frag" />
     <None Include="texture.vs" />
   </ItemGroup>
